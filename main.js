@@ -8,7 +8,7 @@ function getData() {
     })
 
     .then((data) => {
-      console.log(data);
+      //console.log(data);
 
       const EURO = data.rates.EUR;
       const TRY = EURO / data.rates.TRY;
@@ -19,6 +19,8 @@ function getData() {
       SetData(TRY, USD, GBP, EURO, PHP);
     });
 }
+
+//----------addToUİ-----------
 
 function SetData(TRY, USD, GBP, EURO, PHP) {
   const avro = document.getElementById("euro-text");
